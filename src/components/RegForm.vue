@@ -1,7 +1,7 @@
 <template>
   <el-card shadow="hover" class="mx-auto">
     <div id="loginform">
-      <el-form ref="form" :model="form" label-width="80px">
+      <el-form ref="form" :model="form" label-width="140px">
         <el-form-item label="Username" required="" :error="nameError">
           <el-input v-model="form.username"></el-input>
         </el-form-item>
@@ -12,7 +12,8 @@
             show-password
           ></el-input>
         </el-form-item>
-        <el-form-item label="Confirm Password" :error="confirmError" required="">
+        <el-form-item :error="confirmError" required="">
+          <span slot="label">Confirm Password</span>
           <el-input placeholder="Repeat Password" v-model="confirmPassword" show-password></el-input>
         </el-form-item>
         <el-button type="primary" @click="onSubmit">Register</el-button>
@@ -26,7 +27,7 @@
 
 <style>
 #loginform {
-  padding: 30px;
+  padding: 30px 30px 30px 10px;
 }
 </style>
 
