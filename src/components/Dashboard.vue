@@ -1,5 +1,3 @@
 <template>
-<div>
-    dashboard template
-</div>
+    <div></div>
 </template>
