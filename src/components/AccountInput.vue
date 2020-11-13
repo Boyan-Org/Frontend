@@ -65,5 +65,6 @@ export default {
   align-items: center;
   background-image: url("../assets/login-hero-crop.jpg");
   background-size: cover;
+  text-align: center;
 }
 </style>

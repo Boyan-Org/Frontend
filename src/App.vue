@@ -21,9 +21,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   height: 100%;
-}
-
-#app {
-  text-align: center;
+  overflow-y: hidden;
 }
 </style>

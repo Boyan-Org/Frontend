@@ -8,14 +8,15 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/login', name:'Login', component: AccountInput, children: [
+  { path: '/login', component: AccountInput, children: [
     {path: '', component: LoginForm}
   ]},
-  { path: '/register', name:'Register', component: AccountInput, children: [
+  { path: '/register', component: AccountInput, children: [
     {path: '', component: RegForm}
   ] },
-  { path: '/dashboard', name:'Dashboard', component: Dashboard },
-  { path: '/', redirect: '/login'}
+  { path: '/dashboard', component: Dashboard },
+  { path: '/', redirect: '/dashboard'}
+  // { path: '/', redirect: '/login'}
 ]
 
 const router = new VueRouter({
