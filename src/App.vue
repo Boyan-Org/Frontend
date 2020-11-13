@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <AccountInput />
+    <!-- <AccountInput /> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import AccountInput from "./components/AccountInput.vue";
-
+import router from "./router";
 export default {
   name: "App",
-  components: {
-    AccountInput,
-  },
+  router,
 };
 </script>
 

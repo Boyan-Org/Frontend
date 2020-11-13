@@ -12,26 +12,7 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import LoginForm from "./LoginForm.vue";
-import RegForm from "./RegForm.vue"
-
-import VueRouter from "vue-router";
-Vue.use(VueRouter);
-
-const routes = [
-  { path: '/login', name:'Login', component: LoginForm },
-  { path: '/register', name:'Register', component: RegForm },
-  { path: '/', redirect: '/login'}
-]
-
-const router = new VueRouter({
-  mode: 'history',
-  routes
-})
-
 export default {
-  router,
   data (){
     return {
       windowWidth: window.innerWidth,
