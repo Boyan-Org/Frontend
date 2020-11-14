@@ -15,8 +15,8 @@ const routes = [
     {path: '', component: RegForm}
   ] },
   { path: '/dashboard', component: Dashboard },
-  { path: '/', redirect: '/dashboard'}
-  // { path: '/', redirect: '/login'}
+  // { path: '/', redirect: '/dashboard'}
+  { path: '/', redirect: '/login'}
 ]
 
 const router = new VueRouter({
