@@ -153,13 +153,6 @@ export default {
 </script>
 
 <style>
-/* .el-menu-vertical {
-  height: 100%;
-} */
-
-/* .el-menu-vertical:not(.el-menu--collapse) {
-  width: 200px;
-} */
 
 #header {
   height: 100%;
@@ -169,8 +162,6 @@ export default {
 }
 
 #dashboard-content {
-  /* background-image: url("../assets/login-hero-crop.jpg"); */
-  /* background-size: cover; */
   overflow-y: auto !important;
   flex-direction: column;
 }

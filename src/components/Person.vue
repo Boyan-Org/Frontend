@@ -10,7 +10,7 @@
       <el-input v-model="form.name"></el-input>
     </el-form-item>
     <el-form-item label="Gender" required="">
-      <el-select v-model="form.gender" placeholder="">
+      <el-select v-model="form.gender" :placeholder="form.gender">
         <el-option label="Male" value="Male"></el-option>
         <el-option label="Female" value="Female"></el-option>
       </el-select>
